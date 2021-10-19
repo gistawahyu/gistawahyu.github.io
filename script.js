@@ -50,7 +50,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   input: 'range',
                   inputLabel: 'Antara 1 - 100 ya',
                   inputAttributes: {
-                    min: 99,
+                    min: 1,
                     max: 100,
                     step: 1
                   },
