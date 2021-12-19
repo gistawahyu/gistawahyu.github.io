@@ -12,7 +12,8 @@ if (url.searchParams.get('by') != null) {
 
 let footer = document.getElementById("credit");
 footer.innerHTML = sender;
-footer.href = "https://www.instagram.com/adamukti/";
+footer.href = "https://www.instagram.com/gistawahyuu__
+/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire("Hai Cantik", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
