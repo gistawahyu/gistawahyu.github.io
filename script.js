@@ -39,11 +39,10 @@ document.querySelector(".tombol").addEventListener('click', function () {
             showDenyButton: false,
             showCancelButton: false,
             confirmButtonText: `Sayang`,
-            denyButtonText: `Gak`,
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`${sender} juga sayang banget sama ${nama}`).then(function () {
+              Swal.fire(`${sender} juga sayang banget sama ${nama} Tapi Boong`).then(function () {
                 Swal.fire({
                   title: 'Seberapa sayang emangnya?',
                   icon: 'question',
@@ -51,7 +50,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   inputLabel: 'Antara 1 - 100 ya',
                   inputAttributes: {
                     min: 1,
-                    max: 100,
+                    max: 2,
                     step: 1
                   },
                   inputValue: 50
@@ -63,7 +62,6 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       showDenyButton: false,
                       showCancelButton: false,
                       confirmButtonText: `Kangen :(`,
-                      denyButtonText: `Gak!`,
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
