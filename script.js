@@ -36,7 +36,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
         }).then(function () {
           const pertanyaan = Swal.fire({
             title: `${nama} sayang ga sama ${sender}?`,
-            showDenyButton: true,
+            showDenyButton: false,
             showCancelButton: false,
             confirmButtonText: `Sayang`,
             denyButtonText: `Gak`,
@@ -60,7 +60,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   Swal.fire(`Makasih ya udah sayang sama ${sender} ${val}%`).then(function () {
                     Swal.fire({
                       title: `Sekarang ${nama} kangen ga sama ${sender}?`,
-                      showDenyButton: true,
+                      showDenyButton: false,
                       showCancelButton: false,
                       confirmButtonText: `Kangen :(`,
                       denyButtonText: `Gak!`,
