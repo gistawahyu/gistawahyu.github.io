@@ -39,10 +39,11 @@ document.querySelector(".tombol").addEventListener('click', function () {
             showDenyButton: false,
             showCancelButton: false,
             confirmButtonText: `Sayang`,
+            denyButtonText: `Gak`,
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`${sender} juga sayang banget sama ${nama} Tapi Boong`).then(function () {
+              Swal.fire(`${sender} juga sayang banget sama ${nama}. Tapi Boong!`).then(function () {
                 Swal.fire({
                   title: 'Seberapa sayang emangnya?',
                   icon: 'question',
@@ -66,7 +67,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
                         Swal.fire(`Huhu iya ${sender} juga kangen ${nama} :((`).then(function () {
-                          Swal.fire('Terakhir deh sayang').then(function () {
+                          Swal.fire('Terakhir deh Cantik').then(function () {
                             Swal.fire('Coba klik ikon hati di paling bawah dong')
                           })
                         })
