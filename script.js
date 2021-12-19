@@ -7,7 +7,7 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Gista Wahyu";
+  sender = "Gista";
 }
 
 let footer = document.getElementById("credit");
@@ -15,7 +15,7 @@ footer.innerHTML = sender;
 footer.href = "https://www.instagram.com/gistawahyuu__/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hai Cantik", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
+  Swal.fire("Hallo Cantik", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
     Swal.fire("Jawab yang jujur ya!").then(function () {
       Swal.fire("Awas aja kalo boong!!", "", "error").then(function () {
 
@@ -36,7 +36,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
         }).then(function () {
           const pertanyaan = Swal.fire({
             title: `${nama} sayang ga sama ${sender}?`,
-            showDenyButton: false,
+            showDenyButton: true,
             showCancelButton: false,
             confirmButtonText: `Sayang`,
             denyButtonText: `Gak`,
@@ -60,7 +60,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   Swal.fire(`Makasih ya udah sayang sama ${sender} ${val}%`).then(function () {
                     Swal.fire({
                       title: `Sekarang ${nama} kangen ga sama ${sender}?`,
-                      showDenyButton: false,
+                      showDenyButton: true,
                       showCancelButton: false,
                       confirmButtonText: `Kangen :(`,
                       denyButtonText: `Gak!`,
